@@ -4,7 +4,7 @@ gmail-notify
 Designed for use on a Raspberry Pi with a LEDborg.
 
 To make this work, you need to install:
-=======================================
+---------------------------------------
 
 Raspbian (latest)
 (More to come, need to find list of what I installed).
