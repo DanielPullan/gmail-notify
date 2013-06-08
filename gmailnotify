@@ -13,9 +13,9 @@ mail = int(feedparser.parse("https://" + username + ":" + password + "@mail.goog
 
 contact = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/dan")["feed"] ["fullcount"])
 
+
 if mail > 0 and \
 contact > 0:
-
 	LedBorg = open('/dev/ledborg', 'w')
 
 	LedBorg.write('020')
@@ -24,6 +24,15 @@ contact > 0:
 
 	print ('You have a message from contact')
 
+elif mail > 4:
+	LedBorg = open('/dev/ledborg', 'w')
+
+	LedBorg.write('200')
+
+	del LedBorg
+
+	print ('You have too many messages in your inbox')
+
 elif mail > 0:
 	LedBorg = open('/dev/ledborg', 'w')
 
@@ -31,9 +40,9 @@ elif mail > 0:
 
 	del LedBorg
 
-	print ('You have a message in Inbox')
+	print ('You have a message in your inbox')
 
-else:
+else:	
 	LedBorg = open('/dev/ledborg', 'w')
 
 	LedBorg.write('000')
