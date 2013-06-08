@@ -1,13 +1,7 @@
 gmail-notify
 ============
 
-Designed for use on a Raspberry Pi with a LEDborg.
-
-To make this work, you need to install:
----------------------------------------
-
-Raspbian (latest)
-(More to come, need to find list of what I installed).
+Designed for use on a Raspberry Pi with a LEDborg and Python development installed.
 
 How the code works
 ==================
@@ -19,9 +13,4 @@ Then from the "contact" label, if there is any emails, it tells the LEDborg to d
 terminal, it also prints "from Contact".
 
 If there is no mail, the LEDborg will not have any light shown and no message is printed in the terminal.
-
-How to install
-==============
-
-To come.
 
