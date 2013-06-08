@@ -1,24 +1,37 @@
 import feedparser
 
+
+
+
 username = "username@gmail.com"
 
 password = "password"
 
+
+
 mail = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
 
+contact = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/dan")["feed"] ["fullcount"])
 
-contact = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/contact")["feed"] ["fullcount"])
+if mail > 0 and \
+contact > 0:
 
-
-if mail > 0 :
-
-  LedBorg = open('/dev/ledborg', 'w')
+	LedBorg = open('/dev/ledborg', 'w')
 
 	LedBorg.write('020')
 
 	del LedBorg
 
-	print ('You have a message')
+	print ('You have a message from contact')
+
+elif mail > 0:
+	LedBorg = open('/dev/ledborg', 'w')
+
+	LedBorg.write('002')
+
+	del LedBorg
+
+	print ('You have a message in Inbox')
 
 else:
 	LedBorg = open('/dev/ledborg', 'w')
@@ -27,26 +40,4 @@ else:
 
 	del LedBorg
 
-	print ('No mail')
-
-if contact > 0 :
-
-	LedBorg = open('/dev/ledborg', 'w')
-
-	LedBorg.write('020')
-
-	del LedBorg
-
-	print ('from Contact')
-
-
-
-else:
-	LedBorg = open('/dev/ledborg', 'w')
-
-	LedBorg.write('000')
-
-	del LedBorg
-
-
- 
+	print ('Nope, no mail yet!')
