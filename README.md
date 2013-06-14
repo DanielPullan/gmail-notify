@@ -14,3 +14,4 @@ terminal, it also prints "from Contact".
 
 If there is no mail, the LEDborg will not have any light shown and no message is printed in the terminal.
 
+Wizards
