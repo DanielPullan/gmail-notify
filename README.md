@@ -1,17 +1,16 @@
 gmail-notify
 ============
+Written by Dan (@soundsarenoisy)
 
-Designed for use on a Raspberry Pi with a LEDborg and Python development installed.
+## Requirements
+- A networked Raspberry Pi, Wired connection preferred.
+- A up to date copy of Raspbian
+- A PiGlow. [Buy from Pimoroni Shop](http://shop.pimoroni.com/products/piglow)
 
-How the code works
-==================
+( More requirements, will add when remember what those requirements were)
 
-Basically it reads a feed from your gmail inbox, if there is any emails, it tells the attached LEDborg to put on a
-green light. It then prints "You have a message".
+## Setup
+Here, setup will be explained
 
-Then from the "contact" label, if there is any emails, it tells the LEDborg to display a different colour. In the 
-terminal, it also prints "from Contact".
-
-If there is no mail, the LEDborg will not have any light shown and no message is printed in the terminal.
-
-Wizards
+## How it works
+Here, how it works will be explained
