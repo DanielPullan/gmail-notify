@@ -1,6 +1,6 @@
 gmail-notify
 ============
-Written by Dan (@soundsarenoisy)
+Written by Dan [@soundarenoisy](http://twitter.com/soundsarenoisy)
 
 ## Requirements
 - A networked Raspberry Pi, Wired connection preferred.
