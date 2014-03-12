@@ -16,14 +16,25 @@ A little long, but you can use most of these in other projects.
 - feedparser (A pip package)
 - PyGlow [Download from Github](https://github.com/Boeeerb/PiGlow)
 - Pygame (Default in Raspbian)
+- Git
 
 
 ### Setup
-For the sake of simplicity, I'm going to link to different articles to install/setup different requirements. After that, I will explain how to setup the code I actually wrote.
 
-- Setup your Pi
-- Install Python-Dev and Python-Pip
+- Setup your Pi [elinux.org Wiki Guide](http://elinux.org/RPi_Easy_SD_Card_Setup)
+- Install Python-Dev, Python-Pip, Feedparser, Git, python-smbus and python-psutil
+ ```sudo apt-get install python-dev```
+``` sudo apt-get install python-pip```
+``` sudo pip install feedparser```
+``` sudo apt-get install git```
+``` sudo apt-get install python-smbus```
+``` sudo apt-get install python-psutil```
+- Enable i2c driver
+``` sudo nano /etc/modules```
+(more coming)
 - Install Pyglow
+
+
 
 ### How it works
 Here, how it works will be explained
