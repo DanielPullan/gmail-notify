@@ -1,52 +1,47 @@
+##################
+##Lucky it's A####
+##Family Py!######
+##################
+
+
+## imports
+from pyglow import PyGlow
+import pygame
+import time
 import feedparser
 
-
-
-
-username = "username@gmail.com"
-
-password = "password"
-
-
-
+## global variables for gmail
+username = "EMAIL@gmail.com"
+password = "PASSWORD"
 mail = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
+contact = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
 
-contact = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/dan")["feed"] ["fullcount"])
-
+## global variables for pyglow
+pyglow = PyGlow()
+pygame.mixer.init()
+number = 0
+val = 100
+speedval = 90
 
 if mail > 0 and \
 contact > 0:
-	LedBorg = open('/dev/ledborg', 'w')
-
-	LedBorg.write('020')
-
-	del LedBorg
-
-	print ('You have a message from contact')
+        pyglow.all(0)
+        pyglow.pulse(1, 100, speedval)
+        print('Item has sold!')
 
 elif mail > 4:
-	LedBorg = open('/dev/ledborg', 'w')
-
-	LedBorg.write('200')
-
-	del LedBorg
-
-	print ('You have too many messages in your inbox')
+        pyglow.all(0)
+        pyglow.pulse(2, 100, speedval)
+        print('You have too many messages in your inbox')
 
 elif mail > 0:
-	LedBorg = open('/dev/ledborg', 'w')
+        pyglow.all(0)
+        pyglow.pulse(3, 100, speedval)
+        print ('You have a message in your inbox')
 
-	LedBorg.write('002')
+else:
+        pyglow.all(0)
+        pyglow.pulse(4, 100, speedval)
+        print ('Nope, no mail yet!')
 
-	del LedBorg
 
-	print ('You have a message in your inbox')
-
-else:	
-	LedBorg = open('/dev/ledborg', 'w')
-
-	LedBorg.write('000')
-
-	del LedBorg
-
-	print ('Nope, no mail yet!')
