@@ -3,6 +3,10 @@
 ##Family Py!######
 ##################
 
+## Author: Daniel Pullan
+## Twitter: @soundsarenoisy
+## Github: /soundsarenoisy
+
 
 ## imports
 from pyglow import PyGlow
@@ -13,8 +17,10 @@ import feedparser
 ## global variables for gmail
 username = "EMAIL@gmail.com"
 password = "PASSWORD"
-mail = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
-contact = int(feedparser.parse("https://" + username + ":" + password + "@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
+mail = int(feedparser.parse("https://" + username + ":" + password +
+"@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
+contact = int(feedparser.parse("https://" + username + ":" + password +
+"@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
 
 ## global variables for pyglow
 pyglow = PyGlow()
@@ -43,5 +49,3 @@ else:
         pyglow.all(0)
         pyglow.pulse(4, 100, speedval)
         print ('Nope, no mail yet!')
-
-
