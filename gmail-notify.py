@@ -15,6 +15,7 @@ import time
 import feedparser
 
 ## global variables for gmail
+## username = raw_input('Your gmail username is:')
 username = "EMAIL@gmail.com"
 password = "PASSWORD"
 mail = int(feedparser.parse("https://" + username + ":" + password +
