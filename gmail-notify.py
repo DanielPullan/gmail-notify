@@ -16,7 +16,7 @@ import feedparser
 
 ## global variables for gmail
 ## username = raw_input('Your gmail username is:')
-username = "EMAIL@gmail.com"
+username789 = "EMAIL@gmail.com"
 password = "PASSWORD"
 mail = int(feedparser.parse("https://" + username + ":" + password +
 "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
