@@ -18,12 +18,15 @@ import RPi.GPIO as GPIO
 
 ## global variables for gmail
 ## username = raw_input('Your gmail username is:')
-username789 = "EMAIL@gmail.com"
+username = "EMAIL@gmail.com"
 password = "PASSWORD"
 mail = int(feedparser.parse("https://" + username + ":" + password +
 "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
 contact = int(feedparser.parse("https://" + username + ":" + password +
 "@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
+
+#Turn off GPIO Warnings
+GPIO.setwarnings(False)
 
 # Define PiLITEr to GPIO mapping  
 LED1 = 7  
@@ -47,7 +50,7 @@ def main():
  GPIO.setup(LED7, GPIO.OUT) #Set GPIO pin to output (to 'give' power)  
  GPIO.setup(LED8, GPIO.OUT) #Set GPIO pin to output (to 'give' power)  
          
- # Turn on LED 1  
+ # From here on, this is where the code lives.  
  GPIO.output(LED1) == True  
   
 if __name__ == '__main__':  
