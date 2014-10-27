@@ -51,7 +51,18 @@ def main():
  GPIO.setup(LED8, GPIO.OUT) #Set GPIO pin to output (to 'give' power)  
          
  # From here on, this is where the code lives.  
- GPIO.output(LED1) == True  
+ if mail > 0 and \
+contact > 0:
+        print('Item has sold!')
+
+elif mail > 4:
+        print('You have too many messages in your inbox')
+
+elif mail > 0:
+        print ('You have a message in your inbox')
+
+else:
+        print ('Nope, no mail yet!')
   
 if __name__ == '__main__':  
  main() 
