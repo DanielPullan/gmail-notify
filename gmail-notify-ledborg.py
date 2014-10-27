@@ -8,7 +8,8 @@
 ## Github: /soundsarenoisy
 
 ## imports
-## empty for now
+import time
+import feedparser
 
 ## global variables for gmail
 ## same for all versions of gmail-notify
