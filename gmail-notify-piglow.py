@@ -19,8 +19,9 @@ username = raw_input("Your gmail username is: ")
 password = raw_input ("Your password is: ")
 mail = int(feedparser.parse("https://" + username + ":" + password +
 "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
-contact = int(feedparser.parse("https://" + username + ":" + password +
-"@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
+
+## contact = int(feedparser.parse("https://" + username + ":" + password +
+## "@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
 
 ## global variables for pyglow
 pyglow = PyGlow()
@@ -29,8 +30,7 @@ number = 0
 val = 100
 speedval = 90
 
-if mail > 0 and \
-contact > 0:
+if mail > 0: 
         pyglow.all(0)
         pyglow.pulse(1, 100, speedval)
         print('Item has sold!')
