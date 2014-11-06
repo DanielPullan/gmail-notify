@@ -1,13 +1,11 @@
 ##################  ############
 ##Lucky it's A####  ##Pi-Liter##
-##Family Py!######  ##Edition###
-##################  ############
+##Family Py!######  ##Edition###    Thanks to "Average Man"
+##################  ############    for the GPIO Mapping.
 
 ## Author: Daniel Pullan
 ## Twitter: @soundsarenoisy
 ## Github: /soundsarenoisy
-
-## Thanks to "Average Man" for the GPIO Mapping.
 
 
 ## imports
