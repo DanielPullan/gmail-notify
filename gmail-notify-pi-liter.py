@@ -1,7 +1,7 @@
-################## ##################
-##Lucky it's A#### ##Gmail###########
-##Family Py!###### #######Notify#####
-################## ##################
+##################  ############
+##Lucky it's A####  ##Pi-Liter##
+##Family Py!######  ##Edition###
+##################  ############
 
 ## Author: Daniel Pullan
 ## Twitter: @soundsarenoisy
@@ -17,13 +17,13 @@ import os
 import RPi.GPIO as GPIO  
 
 ## global variables for gmail
-## username = raw_input('Your gmail username is:')
-username = "EMAIL@gmail.com"
-password = "PASSWORD"
+username = raw_input("Your gmail username is: ")
+password = raw_input ("Your password is: ")
 mail = int(feedparser.parse("https://" + username + ":" + password +
 "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
-contact = int(feedparser.parse("https://" + username + ":" + password +
-"@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
+
+## contact = int(feedparser.parse("https://" + username + ":" + password +
+## "@mail.google.com/gmail/feed/atom/LABEL-NAME")["feed"] ["fullcount"])
 
 #Turn off GPIO Warnings
 GPIO.setwarnings(False)
@@ -51,8 +51,7 @@ def main():
  GPIO.setup(LED8, GPIO.OUT) #Set GPIO pin to output (to 'give' power)  
          
  # From here on, this is where the code lives.  
- if mail > 0 and \
-contact > 0:
+ if mail > 0:
         print('Item has sold!')
 
 elif mail > 4:
