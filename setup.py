@@ -53,10 +53,10 @@ if board = 1:
     ## global variables for pyglow
     pyglow = PyGlow()
     pygame.mixer.init()
-    ## wtf is this number variable. fuck.
+    ## wtf is this number variable. fuck. maybe colour?
     number = 0
     val = raw_input ("Pick brightness from 0-100: ")
-    speedval = raw_input ("Pick speed from 0-100: ")
+    speedval = raw_input ("Pick speed from 0-1000: ")
     
     
     
