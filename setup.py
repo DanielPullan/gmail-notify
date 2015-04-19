@@ -38,4 +38,44 @@ print "details done!"
 
 board= raw_input("What board are you using today? ")
 
+## boards
+## 1 = pyglow
+## 2 = pi-liter
+## 3 = ledborg
+## 4 = raw edition
+## 5 = unknown
 
+if board = 1:
+    ## chose piglow
+    ## put in pyglow.py settings
+    "You chose piglow."
+    
+    ## global variables for pyglow
+    pyglow = PyGlow()
+    pygame.mixer.init()
+    ## wtf is this number variable. fuck.
+    number = 0
+    val = raw_input ("Pick brightness from 0-100: ")
+    speedval = raw_input ("Pick speed from 0-100: ")
+    
+    
+    
+    break
+elif board = 2:
+    ## chose pi-liter
+    print "You chose pi-liter"
+    break
+elif board = 3:
+    ## chose  ledborg
+    print "You chose ledborg"
+    break
+elif board = 4:
+    ## chose raw edition
+    print "You chose raw edition. Good luck."
+elif board = 5:
+    ## unknown board
+    print "This board currently isn't avaliable." 
+    break
+else:
+    print "Sorry, that isn't a valid board."
+    break
