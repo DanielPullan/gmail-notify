@@ -46,6 +46,14 @@ Ubuntu
 ### Setup
 The setup is pretty involved, depending on the platform add-on board you are using. Pi-Liter is the cheapest and simplest board to use, Piglow being the most involved (but you get more features).
 
+For ubuntu
+
+```
+sudo apt-get install python-feedparser
+```
+
+Then simply edit the gmail-send-notify.py file to add your gmail credentials. Remember gmail needs to be setup for low security apps. Will be worked on.
+
 **Work in progress. Definately not complete, stable or for the faint of mind.**
 
 It'll get done when it gets done, I'm busy working on other projects at the moment but I want to get this project done. I know there's lots I can learn to get it finished and lots that other people can learn from my shoddy code.
