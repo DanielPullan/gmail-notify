@@ -18,6 +18,8 @@ Ledborg: My Ledborg is dead, once I find a replacement, will be worked on.
 
 Raw LEDs: Will be worked on once other targets are finished.
 
+Ubuntu: Not using LED's (naturally) but Ubuntu's notification system instead. Nearly complete (quite simple).
+
 Traffic Lights LED: If I get it and everything else is finished, will be worked on.
 
 ### Features
@@ -35,6 +37,10 @@ Piglow
 
 Ledborg
 - Mix of Pi-Liter and Piglow
+
+Ubuntu
+- Email notifications without the email client.
+- I'm sure there's a use case somewhere... VNC'd into a server and want temp email notifications?
 
 
 ### Setup
