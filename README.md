@@ -18,6 +18,8 @@ Ledborg: My Ledborg is dead, once I find a replacement, will be worked on.
 
 Raw LEDs: Will be worked on once other targets are finished.
 
+Ubuntu: Not using LED's (naturally) but Ubuntu's notification system instead. Nearly complete (quite simple).
+
 Traffic Lights LED: If I get it and everything else is finished, will be worked on.
 
 ### Features
@@ -36,9 +38,21 @@ Piglow
 Ledborg
 - Mix of Pi-Liter and Piglow
 
+Ubuntu
+- Email notifications without the email client.
+- I'm sure there's a use case somewhere... VNC'd into a server and want temp email notifications?
+
 
 ### Setup
 The setup is pretty involved, depending on the platform add-on board you are using. Pi-Liter is the cheapest and simplest board to use, Piglow being the most involved (but you get more features).
+
+For ubuntu
+
+```
+sudo apt-get install python-feedparser
+```
+
+Then simply edit the gmail-send-notify.py file to add your gmail credentials. Remember gmail needs to be setup for low security apps. Will be worked on.
 
 **Work in progress. Definately not complete, stable or for the faint of mind.**
 
