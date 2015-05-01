@@ -14,6 +14,8 @@ print "Please remember to have your Google account setup to allow login from non
 print "I will look into fixing this in a future update."
 
 ## variables
+username = raw_input("Gmail address: ")
+password = raw_input("Password: ")
 mail = int(feedparser.parse("https://" + username + ":" + password +
 "@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
 mail2 = ("You have " + str(mail) + " messages")
