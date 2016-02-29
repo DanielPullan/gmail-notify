@@ -7,6 +7,8 @@ import pygame
 import time
 import feedparser
 
+## TODO: migrate to PyGlow by benleb
+
 ## initialises
 ## global variables for pyglow
 piglow = PiGlow()
