@@ -26,7 +26,7 @@ Ubuntu - Mostly working, just needs cleaning up.
 ### Features
 Features depend on which board you are using.
 
-Piglow
+PiGlow
 - Colours!
 - Brightness levels!
 - Animations!
