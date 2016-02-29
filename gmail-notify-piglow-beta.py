@@ -1,5 +1,6 @@
-#!/usr/bin/python
-
+## Author: Daniel Pullan
+## Github: GitHub.com/DanielPullan
+## Website: DanielPullan.co.uk
 
 ## imports  
 from piglow import PiGlow

@@ -1,11 +1,6 @@
-################## ##################
-##Lucky it's A#### ##Gmail###########
-##Family Py!###### #######Notify#####
-################## ##################
-
 ## Author: Daniel Pullan
-## Twitter: @soundsarenoisy
-## Github: /soundsarenoisy
+## Github: GitHub.com/DanielPullan
+## Website: DanielPullan.co.uk
 
 ## imports
 import time

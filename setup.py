@@ -1,14 +1,6 @@
-################## ##################
-##Lucky it's A#### ##Gmail###########
-##Family Py!###### #######Notify#####
-################## ##################
-
 ## Author: Daniel Pullan
-## Twitter: @soundsarenoisy
-## Github: /soundsarenoisy
-
-## This is the setup file. You input your board type and gmail details here.
-## It's only going to be a CLI setup since you can then set it up whilst remoted in via Putty or something.
+## Github: GitHub.com/DanielPullan
+## Website: DanielPullan.co.uk
 
 
 ## imports

@@ -1,15 +1,6 @@
-##################  ############
-##Lucky it's A####  ####Piglow##
-##Family Py!######  ##Edition###
-##################  ############
-
-################################
-##I'm on a train woooWooooo#####
-################################
-
 ## Author: Daniel Pullan
-## Twitter: @soundsarenoisy
-## Github: /soundsarenoisy
+## Github: GitHub.com/DanielPullan
+## Website: DanielPullan.co.uk
 
 
 ## imports	

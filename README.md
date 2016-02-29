@@ -1,8 +1,8 @@
 # Gmail-Notify
 
-Written by Dan @soundsarenoisy
+Written by Dan (danielpullan.co.uk)
 
-Project status: Not dead (April 2015).
+Project status: Not dead (Feb 2016).
 
 ### About Gmail-Notify
 Gmail-Notify was originally written to be used with a Ledborg. After mine died, I rewrote it to run on a Piglow instead. After buying a Pi-Liter, I instead decided to write Gmail-Notify versions for all 3 platforms. 

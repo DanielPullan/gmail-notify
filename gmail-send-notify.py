@@ -1,3 +1,7 @@
+## Author: Daniel Pullan
+## Github: GitHub.com/DanielPullan
+## Website: DanielPullan.co.uk
+
 #!/usr/bin/python
 
 
