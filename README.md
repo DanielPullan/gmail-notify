@@ -10,33 +10,44 @@ Gmail-Notify was originally written to be used with a Ledborg. After mine died, 
 Once I've finished what I've started, I'll likely make some starter code for people doing it the manly way, with raw LEDs and breadboards and beards with fists underneath them. Given that me putting this into the README is the first update this project has had in 5 months, this won't be coming soon. I also saw a Traffic Lights LED board for the Pi. It looked perfect for this use case...
 
 ### Targets
-Pi-Liter: This one can and will be worked on.
 
-Piglow: This one can and will be worked on.
+PiGlow - Mainly working, Beta version is nearly done.
 
-Ledborg: My Ledborg is dead, once I find a replacement, will be worked on.
+Pi-Liter - Not working, next in line.
 
-Raw LEDs: Will be worked on once other targets are finished.
+Ledborg - Not working, haven't got one currently.
 
-Ubuntu: Not using LED's (naturally) but Ubuntu's notification system instead. Nearly complete (quite simple).
+AstroPi - Not working, ordering one soon.
 
-Traffic Lights LED: If I get it and everything else is finished, will be worked on.
+Raw LED - Not working, next in line to Pi-Liter
+
+Ubuntu - Mostly working, just needs cleaning up.
 
 ### Features
 Features depend on which board you are using.
-
-Pi-Liter
-- Super simple setup.
-- Perfect for monitoring small amounts of email (or specific types of email)
-- Kitt-mode: Remember Kitt from Knight Rider? Enable this and be amazed.
 
 Piglow
 - Colours!
 - Brightness levels!
 - Animations!
 
+Pi-Liter
+- Super simple setup.
+- Perfect for monitoring small amounts of email (or specific types of email)
+- Kitt-mode: Remember Kitt from Knight Rider? Enable this and be amazed.
+
 Ledborg
-- Mix of Pi-Liter and Piglow
+- Unknown until I get my hands on a new Ledborg.
+
+AstroPi
+- More colours
+- More brighness
+- More animations
+- Temp level stuff too because why not?
+
+Raw LED
+- RAW EDITION
+- BUILD IT LIKE A MAN (or a girl... please don't eat me please feminists)
 
 Ubuntu
 - Email notifications without the email client.
@@ -44,15 +55,7 @@ Ubuntu
 
 
 ### Setup
-The setup is pretty involved, depending on the platform add-on board you are using. Pi-Liter is the cheapest and simplest board to use, Piglow being the most involved (but you get more features).
-
-For ubuntu
-
-```
-sudo apt-get install python-feedparser
-```
-
-Then simply edit the gmail-send-notify.py file to add your gmail credentials. Remember gmail needs to be setup for low security apps. Will be worked on.
+Will fill this section out soon... focusing on getting things working on my Pi before I help others get it working on their Pis.
 
 **Work in progress. Definately not complete, stable or for the faint of mind.**
 
