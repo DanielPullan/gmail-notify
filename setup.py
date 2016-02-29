@@ -43,7 +43,8 @@ board= raw_input("What board are you using today? ")
 ## 2 = pi-liter
 ## 3 = ledborg
 ## 4 = raw edition
-## 5 = unknown
+## 5 = sense hat
+## 100 = unknown
 
 if board = 1:
     ## chose piglow
