@@ -30,32 +30,24 @@ mail = int(feedparser.parse("https://" + username + ":" + password +
 mail2 = ("You have " + str(mail) + " messages")
 
 
-piglow.all(0)
+b = input("Maximum brightness: ")
+s = input("Speed in milliseconds (try 1000 as a default): ")
+
+pyglow = PyGlow(brightness=int(b), speed=int(s), pulse=True)
+
+pyglow.all(0)
 
 if mail < 5:
-	piglow.arm1(10)
+	pyglow.arm1(10)
 elif mail < 10:
-	piglow.arm1(10)
-	piglow.arm2(10)
+	pyglow.arm1(10)
+	pyglow.arm2(10)
 elif mail < 15:
-	piglow.arm1(10)
-	piglow.arm2(10)
+	pyglow.arm1(10)
+	pyglow.arm2(10)
 	piglow.arm3(10)
 else:
 	print "Uh oh"
-	piglow.all(100)
-	sleep(0.5)
-	piglow.all(0)
-	sleep(0.1)
-	piglow.all(100)
-	sleep(0.5)
-	piglow.all(0)
-	sleep(0.1)
-	piglow.all(100)
-	sleep(0.5)
-	piglow.all(0)
-	sleep(0.1)
-	piglow.all(100)
-	sleep(0.5)
-	piglow.all(0)
-	sleep(0.1)
+	for x in range(0, 10):
+		pyglow.all(100)
+		sleep(0.5)
