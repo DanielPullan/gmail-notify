@@ -13,16 +13,32 @@ Gmail-Notify was originally written to be used with a Ledborg. After mine died, 
 
 Priority is top = most important, bottom = least important
 
-**PiGlow** - Mainly working, Beta version is nearly done.
+**PiGlow** - Not working, in development
 
 **AstroPi** - Not working, in development
 
-**Ubuntu** - Mostly working, just needs cleaning up.
+**Ubuntu** - Not working
 
-**Pi-Liter** - Not working, next in line.
+**Pi-Liter** - Not working
 
-**Ledborg** - Not working, haven't got one currently.
+**Ledborg** - Not working
 
-**Raw LED** - Not working, next in line to Pi-Liter
+**Raw LED** - Not working
+
+### Features
+
+Features will be added here when they work, not planned features.
+
+**PiGlow** - None yet
+
+**AstroPi** - None yet
+
+**Ubuntu** - None yet
+
+**Pi-Liter** - None yet
+
+**Ledborg** - None yet
+
+**Raw LED** - None yet
 
 
