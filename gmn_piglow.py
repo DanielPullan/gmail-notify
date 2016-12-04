@@ -15,7 +15,11 @@ piglow = PiGlow()
 ## Device parameters
 piglow.all(0)
 
-if mail < 5:
+if mail == 0:
+        print "no mail"
+        piglow.all(0)
+        sleep(0.5)
+elif mail < 5:
         print "mail count low"
         piglow.arm1(10)
         sleep(0.5)
