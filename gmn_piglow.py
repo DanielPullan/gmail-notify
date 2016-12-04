@@ -4,7 +4,7 @@
 ## Device: Pimoroni PiGlow
 
 from piglow import PiGlow
-import pygame
+import pygame # needed? might be from older bosrd
 from time import sleep
 import login
 from login import mail
@@ -13,8 +13,8 @@ from login import mail
 piglow = PiGlow()
 
 ## Device parameters
-b = 100
-s = 1000
+b = (100)
+s = (1000)
 piglow = PiGlow(brightness=int(b), speed=int(s), pulse=True)
 piglow.all(0)
 
