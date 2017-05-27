@@ -3,6 +3,8 @@
 ## Website: DanielPullan.co.uk
 ## Device: Pimoroni PiGlow
 
+## Can't remember the state of this one
+
 from piglow import PiGlow
 import pygame # needed? might be from older bosrd
 from time import sleep
