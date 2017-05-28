@@ -2,20 +2,29 @@
 ## Github: GitHub.com/DanielPullan
 ## Website: DanielPullan.co.uk
 
+import feedparser
 from time import sleep
 from config import email, password, mail, salt, key
 import subprocess as s
 
 ## create a function called alert
-def alert():
+def noEmail():
         ## use notify-send to send a notification
-        s.call(['notify-send','Email','New email recieved'])
+        s.call(['notify-send','Nothing','Nothing there'])
+def lowEmail ():
+        s.call(['notify-send', 'Low Emails', 'There is a low amount of emails'])
+def mediumEmail():
+        s.call(['notify-send', 'Medium Emails', 'There is a medium amount of emails'])
+def highEmail():
+        s.call(['notify-send', 'High Emails', 'There is a high amount of emails'])
 
-## If there is an email at all (more than nothing)
-if mail > 0:
-        ## do the alert function
-        alert()
-## else (there is no emails)
+
+if mail < 5:
+        lowEmail()
+elif mail < 10:
+        mediumEmail()
+elif mail < 15:
+        highEmail()
 else:
         ## print there is nothing, mainly for logging purposes
-        print ("There is nothing")
+        noEmail()
