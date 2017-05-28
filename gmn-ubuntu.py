@@ -18,7 +18,6 @@ def mediumEmail():
 def highEmail():
         s.call(['notify-send', 'High Emails', 'There is a high amount of emails'])
 
-
 if mail < 5:
         lowEmail()
 elif mail < 10:
