@@ -1,15 +1,11 @@
 ## Author: Daniel Pullan
 ## Github: GitHub.com/DanielPullan
 ## Website: DanielPullan.co.uk
-## Device: Pimoroni PiGlow
 
-## Can't remember the state of this one
-
-from piglow import PiGlow
-import pygame # needed? might be from older bosrd
+import feedparser
 from time import sleep
-import login
-from login import mail
+from config import email, password, mail
+from piglow import PiGlow
 
 ## Init the current device
 piglow = PiGlow()

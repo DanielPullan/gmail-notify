@@ -2,19 +2,10 @@
 ## Github: GitHub.com/DanielPullan
 ## Website: DanielPullan.co.uk
 
-## This script should work, make sure you make changes to config.py
-
-# i had to pip-install simplepush, if you have issues, installing python-dev
-# fixed it for me
-from simplepush import send_encrypted
 import feedparser
-# i made a config file defining key, password and salt so that I could upload
-# it once and then gitignore it to avoid encryption keys being uploaded
-from  config import email, password, salt, key
-
-## create an int using feedparser to parse the fullcount from the email feed
-mail = int(feedparser.parse("https://" + email + ":" + password +
-"@mail.google.com/gmail/feed/atom/")["feed"] ["fullcount"])
+from time import sleep
+from  config import email, password, mail, salt, key
+from simplepush import send_encrypted
 
 ## create a function called alert
 def alert():
