@@ -1,4 +1,5 @@
 ## Gmail related stuff
+import feedparser
 
 email = "insert_gmail_account_here" ## ensure low security is enabled in account settings
 password = "please_don't_make_me_explain_this" ## please.

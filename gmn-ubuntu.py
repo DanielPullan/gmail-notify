@@ -2,11 +2,9 @@
 ## Github: GitHub.com/DanielPullan
 ## Website: DanielPullan.co.uk
 
-import feedparser
 from time import sleep
 from config import email, password, mail, salt, key
 import subprocess as s
-s.call(['notify-send','foo','bar'])
 
 ## create a function called alert
 def alert():
