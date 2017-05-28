@@ -4,7 +4,7 @@
 
 import feedparser
 from time import sleep
-from  config import email, password, mail, salt, key
+from config import email, password, mail, salt, key
 from simplepush import send_encrypted
 
 ## create a function called alert
