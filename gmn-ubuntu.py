@@ -11,12 +11,16 @@ import subprocess as s
 def noEmail():
         ## use notify-send to send a notification
         s.call(['notify-send','Nothing','Nothing there'])
+        print ("No emails")
 def lowEmail ():
         s.call(['notify-send', 'Low Emails', 'There is a low amount of emails'])
+        print ("Low emails")
 def mediumEmail():
         s.call(['notify-send', 'Medium Emails', 'There is a medium amount of emails'])
+        print ("Medium emails")
 def highEmail():
         s.call(['notify-send', 'High Emails', 'There is a high amount of emails'])
+        print ("High emails")
 
 if mail < 5:
         lowEmail()
