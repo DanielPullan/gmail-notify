@@ -2,9 +2,7 @@
 
 Written by Daniel Pullan (https://danielpullan.co.uk)
 
-Project status: Not dead (Jan 2018).
-
-**14/01/2018**: Still not dead, just busy. Update coming soon, Got a Unicorn HAT and Unicorn PHAT on the way, as well as a Pi Zero WH.
+Project status: Dead
 
 ### About Gmail-Notify
 Gmail-Notify was originally written to be used with a Ledborg. After mine died, I rewrote it to run on a Piglow instead. After buying a Pi-Liter, I instead decided to write Gmail-Notify versions for all 3 platforms.  The list has since grown.

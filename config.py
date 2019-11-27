@@ -11,5 +11,5 @@ mail = int(feedparser.parse("https://" + email + ":" + password +
 
 ## SimplePush related stuff
 
-salt = "insert_salt_here" ## recommended you play matchmaking on csgo for adequate amounts of salt
+salt = "insert_salt_here"
 key = "insert_key_here"
